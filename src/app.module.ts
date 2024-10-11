@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AcessosModule } from './modules/acessos/acessos.module';
 import { DatabaseModule } from './database/database.module';
-import { EmailModule } from './modules/email/email.module';
+import { RepositoryModule } from '@repositories/repository.module';
 
 @Module({
-  imports: [DatabaseModule, AcessosModule, EmailModule],
+  imports: [DatabaseModule, RepositoryModule, AcessosModule],
   controllers: [],
   providers: [],
 })

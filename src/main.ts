@@ -11,10 +11,10 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe()); // Habilita a validação dos DTOs
 
   const config = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API description')
+    .setTitle('Nested API')
+    .setDescription('The Nested API description')
     .setVersion('1.0')
-    .addTag('cats')
+    .addTag('nested')
     .build();
   const document = SwaggerModule.createDocument(app, config);
 

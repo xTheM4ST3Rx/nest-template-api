@@ -4,10 +4,11 @@ import * as nodemailer from 'nodemailer';
 import { EmailProvider } from '../interfaces/email-provider.interface';
 
 @Injectable()
-export class NodemailerProvider implements EmailProvider {
+export class NodemailerProvider extends EmailProvider {
   private transporter: nodemailer.Transporter;
 
   constructor() {
+    super();
     this.transporter = nodemailer.createTransport({
       host: process.env.MAIL_HOST,
       port: +process.env.MAIL_PORT,

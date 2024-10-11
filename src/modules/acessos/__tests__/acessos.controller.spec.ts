@@ -3,7 +3,7 @@ import { AcessosController } from '../acessos.controller';
 import { AcessosService } from '../acessos.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Acesso } from '../entities/acesso.entity';
+import { Acesso } from '../entities/acessos.entity';
 
 describe('AcessosController', () => {
   let controller: AcessosController;
